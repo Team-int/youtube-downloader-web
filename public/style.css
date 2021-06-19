@@ -1,0 +1,40 @@
+.container {
+        display: grid;
+        width: 90%;
+        grid-template-areas:
+        "header header header"
+        "img      .    info"
+        ". . .";
+        row-gap: 15px;
+        column-gap: 25px;
+      }
+      .table-container {
+        width: 90%;
+      }
+
+      header {
+        grid-area: "header";
+      }
+
+      .iframe {
+        grid-area: "img";
+      }
+
+      .thumbnail-img {
+        width: 560;
+        height: 315;
+      }
+
+      .blur {
+        filter: blur(15px);
+      }
+
+      .info {
+        grid-area: "info";
+        width: 500px;
+      }
+
+      .description {
+        overflow: auto;
+        height: 100px;
+      }
